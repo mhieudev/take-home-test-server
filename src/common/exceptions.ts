@@ -1,0 +1,6 @@
+export enum ErrorMessage {
+  INVALID_ROUTE = 'INVALID_ROUTE',
+  INVALID_ID = 'INVALID_ID',
+
+  RECORD_DELETED = 'RECORD_DELETED',
+}

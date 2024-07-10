@@ -1,0 +1,137 @@
+{
+  "info": {
+    "_postman_id": "b4e53f11-6dfb-408a-b4ae-750ab4be560c",
+    "name": "Take Home Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "27506575",
+    "_collection_link": "https://dark-flare-460740.postman.co/workspace/Vonic~48539f80-9fac-4166-9430-7d53b3f04aae/collection/27506575-b4e53f11-6dfb-408a-b4ae-750ab4be560c?action=share&source=collection_link&creator=27506575"
+  },
+  "item": [
+    {
+      "name": "Ping",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/ping",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["ping"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get List To Do",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/to-do-list",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["to-do-list"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create To Do",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"abc\",\n    \"startDate\": \"2024-07-01\",\n    \"endDate\": \"2024-07-11\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/to-do-list",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["to-do-list"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get To Do",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/to-do-list/:id",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["to-do-list", ":id"],
+          "variable": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update To Do",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"abccds\",\n    \"startDate\": \"2024-07-01\",\n    \"endDate\": \"2024-07-11\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/to-do-list/:id",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["to-do-list", ":id"],
+          "variable": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete To Do",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/to-do-list/:id",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["to-do-list", ":id"],
+          "variable": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
